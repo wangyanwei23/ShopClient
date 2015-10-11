@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5694820C1B73BC37003C4D36"
-               BuildableName = "ShopClient.app"
-               BlueprintName = "ShopClient"
-               ReferencedContainer = "container:ShopClient.xcodeproj">
+               BlueprintIdentifier = "EEBCC9D719CC627D0083B827"
+               BuildableName = "SnapKit.framework"
+               BlueprintName = "SnapKit iOS"
+               ReferencedContainer = "container:SnapKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "569482211B73BC37003C4D36"
-               BuildableName = "ShopClientTests.xctest"
-               BlueprintName = "ShopClientTests"
-               ReferencedContainer = "container:ShopClient.xcodeproj">
+               BlueprintIdentifier = "EEBCC9E119CC627D0083B827"
+               BuildableName = "SnapKit iOS Tests.xctest"
+               BlueprintName = "SnapKit iOS Tests"
+               ReferencedContainer = "container:SnapKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "569482211B73BC37003C4D36"
-               BuildableName = "ShopClientTests.xctest"
-               BlueprintName = "ShopClientTests"
-               ReferencedContainer = "container:ShopClient.xcodeproj">
+               BlueprintIdentifier = "EEBCC9E119CC627D0083B827"
+               BuildableName = "SnapKit iOS Tests.xctest"
+               BlueprintName = "SnapKit iOS Tests"
+               ReferencedContainer = "container:SnapKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5694820C1B73BC37003C4D36"
-            BuildableName = "ShopClient.app"
-            BlueprintName = "ShopClient"
-            ReferencedContainer = "container:ShopClient.xcodeproj">
+            BlueprintIdentifier = "EEBCC9D719CC627D0083B827"
+            BuildableName = "SnapKit.framework"
+            BlueprintName = "SnapKit iOS"
+            ReferencedContainer = "container:SnapKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,16 +75,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5694820C1B73BC37003C4D36"
-            BuildableName = "ShopClient.app"
-            BlueprintName = "ShopClient"
-            ReferencedContainer = "container:ShopClient.xcodeproj">
+            BlueprintIdentifier = "EEBCC9D719CC627D0083B827"
+            BuildableName = "SnapKit.framework"
+            BlueprintName = "SnapKit iOS"
+            ReferencedContainer = "container:SnapKit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -94,16 +93,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5694820C1B73BC37003C4D36"
-            BuildableName = "ShopClient.app"
-            BlueprintName = "ShopClient"
-            ReferencedContainer = "container:ShopClient.xcodeproj">
+            BlueprintIdentifier = "EEBCC9D719CC627D0083B827"
+            BuildableName = "SnapKit.framework"
+            BlueprintName = "SnapKit iOS"
+            ReferencedContainer = "container:SnapKit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

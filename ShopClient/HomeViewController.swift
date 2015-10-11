@@ -85,7 +85,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDat
 
         for var i = 0; i < images.count; i++ {
             let x = i * 320
-            var imageView = UIImageView(frame: CGRectMake(CGFloat(x), 0, self.view.frame.width, self.view.frame.height / 5 + 20))
+            let imageView = UIImageView(frame: CGRectMake(CGFloat(x), 0, self.view.frame.width, self.view.frame.height / 5 + 20))
             imageView.image = UIImage(named: images[i])
             scrollview.addSubview(imageView)
         }
@@ -133,7 +133,12 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDat
             buttons[i].setTitleColor(UIColor.grayColor(), forState: .Normal)
             buttons[i].setImageAndTitleLeft()
             //buttons[i].sizeToFit()
+//            buttons[i].addTarget(self, action: "onClick:", forControlEvents: UIControlEvents.TouchDown)
         }
+        btn1.addTarget(self, action: "onClickBtn1:", forControlEvents: UIControlEvents.TouchDown)
+        btn2.addTarget(self, action: "onClickBtn2:", forControlEvents: UIControlEvents.TouchDown)
+        btn3.addTarget(self, action: "onClickBtn3:", forControlEvents: UIControlEvents.TouchDown)
+        btn4.addTarget(self, action: "onClickBtn4:", forControlEvents: UIControlEvents.TouchDown)
         
         btn_sp.setTitle("更多惊喜", forState: .Normal)
         btn_sp.titleLabel?.font = UIFont.systemFontOfSize(10)
@@ -169,13 +174,13 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDat
         
         //labPrice1.text = "原价：¥" + price
         let attr1 = NSMutableAttributedString(string: "原价：¥" + price)
-        attr1.addAttribute(NSStrikethroughStyleAttributeName, value: NSNumber(integer: 1), range: NSMakeRange(0, count("原价：¥" + price)))
+        attr1.addAttribute(NSStrikethroughStyleAttributeName, value: NSNumber(integer: 1), range: NSMakeRange(0, ("原价：¥" + price).characters.count))
         labPrice1.attributedText = attr1
         labPrice1.font = UIFont.systemFontOfSize(10)
         labPrice1.sizeToFit()
         
         let attr2 = NSMutableAttributedString(string: "原价：¥" + price)
-        attr2.addAttribute(NSStrikethroughStyleAttributeName, value: NSNumber(integer: 1), range: NSMakeRange(0, count("原价：¥" + price)))
+        attr2.addAttribute(NSStrikethroughStyleAttributeName, value: NSNumber(integer: 1), range: NSMakeRange(0, ("原价：¥" + price).characters.count))
         labPrice2.attributedText = attr2
         labPrice2.font = UIFont.systemFontOfSize(10)
         labPrice2.sizeToFit()
@@ -408,7 +413,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDat
             page++
         }
         
-        var offsetX = CGFloat(page) * self.view.frame.width
+        let offsetX = CGFloat(page) * self.view.frame.width
         scrollview.setContentOffset(CGPointMake(offsetX, 0), animated: true)
     }
 
@@ -423,7 +428,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDat
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let identify = "SwiftCell"
-        var cell = table.dequeueReusableCellWithIdentifier(identify) as! CustomHomeCell
+        let cell = table.dequeueReusableCellWithIdentifier(identify) as! CustomHomeCell
         
         cell.accessoryType = UITableViewCellAccessoryType.None
 
@@ -432,7 +437,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDat
         cell.labName.text = self.names[indexPath.row]
 
         let attr = NSMutableAttributedString(string: priceArr)
-        attr.addAttribute(NSStrikethroughStyleAttributeName, value: NSNumber(integer: 1), range: NSMakeRange(0, count(priceArr)))
+        attr.addAttribute(NSStrikethroughStyleAttributeName, value: NSNumber(integer: 1), range: NSMakeRange(0, priceArr.characters.count))
         cell.labPrice.attributedText = attr
 
         cell.labPrice1.text = priceArr
@@ -446,4 +451,58 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDat
         
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        var detailViewController = ShopViewController()
+//        self.navigationController?.pushViewController(ShopViewController(), animated: true)
+        self.presentViewController(ShopViewController(), animated: true, completion: nil)
+    }
+    
+//    func onClick(btn: UIButton) {
+//        print("1111")
+//        switch btn {
+//        case btn == btn1:
+////            self.presentViewController(CategoryViewController(), animated: true, completion: nil)
+//            self.navigationController?.pushViewController(CategoryViewController(), animated: true)
+//            print("1111")
+//            ApiClient.getCategories({ (detail, err) -> Void in
+//                if let info = detail {
+//                    print(info[0].categoryname)
+//                } else {
+//                    if let error = err {
+//                        print(error)
+//                    } else {
+//                        print("未知错误!")
+//                    }
+//                }
+//            })
+//
+//        case btn == btn2:
+////            self.presentViewController(SignInViewController(), animated: true, completion: nil)
+//            self.navigationController?.pushViewController(SignInViewController(), animated: true)
+//        case btn == btn3:
+//            self.presentViewController(CategoryViewController(), animated: true, completion: nil)
+//        default:
+//            self.presentViewController(CategoryViewController(), animated: true, completion: nil)
+//        }
+//    }
+    func onClickBtn1(btn: UIButton) {
+        ApiClient.getCategories({ (detail, err) -> Void in
+            if let info = detail {
+                print(info[10].categoryname)
+            } else {
+                if let error = err {
+                    print(error)
+                } else {
+                    print("未知错误!")
+                }
+            }
+        })
+        
+//        self.navigationController?.pushViewController(CategoryViewController(), animated: true)
+        self.presentViewController(CategoryViewController(), animated: true, completion: nil)
+    }
+    
+    func onClickBtn2(btn: UIButton) {
+        self.presentViewController(SignInViewController(), animated: true, completion: nil)
+    }
 }

@@ -56,7 +56,7 @@ class CustomHomeCell: UITableViewCell {
         labName2.font = UIFont.systemFontOfSize(13)
         let label = "原价：¥"
         let attr = NSMutableAttributedString(string: label)
-        attr.addAttribute(NSStrikethroughStyleAttributeName, value: NSNumber(integer: 1), range: NSMakeRange(0, count(label)))
+        attr.addAttribute(NSStrikethroughStyleAttributeName, value: NSNumber(integer: 1), range: NSMakeRange(0, label.characters.count))
         labName2.attributedText = attr
         labName2.sizeToFit()
         
@@ -114,7 +114,7 @@ class CustomHomeCell: UITableViewCell {
         number.sizeToFit()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

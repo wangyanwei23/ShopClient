@@ -61,6 +61,7 @@ class UserViewController: UIViewController {
         btn1.layer.cornerRadius = 5
         btn1.titleLabel?.font = UIFont.boldSystemFontOfSize(12)
         btn1.sizeToFit()
+        btn1.addTarget(self, action: "onClick:", forControlEvents: UIControlEvents.TouchDown)
     
         for var i = 0; i < btns.count; i++ {
             btns[i].setTitle(btnName[i], forState: .Normal)
@@ -123,5 +124,10 @@ class UserViewController: UIViewController {
             make.top.equalTo(btn_edition.snp_top).offset(17 )
             make.left.equalTo(btn_edition.snp_left).offset(80)
         })
+    }
+    
+    func onClick(btn: UIButton) {
+//        self.presentViewController(SignInViewController(), animated: true, completion: nil)
+        self.navigationController?.pushViewController(SignInViewController(), animated: true)
     }
 }

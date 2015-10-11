@@ -63,7 +63,7 @@ class CustomCategoryCell: UITableViewCell {
         labPrice1.textColor = UIColor.redColor()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

@@ -22,7 +22,6 @@
 		5691A31D1B80032800B5187E /* gouwu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5691A3181B80032800B5187E /* gouwu@3x.png */; };
 		5691A31E1B80032800B5187E /* zhuye@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5691A3191B80032800B5187E /* zhuye@3x.png */; };
 		5691A31F1B80032800B5187E /* zuojiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = 5691A31A1B80032800B5187E /* zuojiantou.png */; };
-		5691A3231B806C4C00B5187E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691A3221B806C4C00B5187E /* MainViewController.swift */; };
 		5691A3251B82DC7C00B5187E /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691A3241B82DC7C00B5187E /* Barcode.swift */; };
 		5691A3391B82E03900B5187E /* Authorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691A3261B82E03900B5187E /* Authorize.swift */; };
 		5691A33A1B82E03900B5187E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691A3271B82E03900B5187E /* Category.swift */; };
@@ -53,12 +52,13 @@
 		56CC791C1B86CB3C005D7E28 /* banner1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CC791A1B86CB3C005D7E28 /* banner1@2x.png */; };
 		56CC791D1B86CB3C005D7E28 /* putao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CC791B1B86CB3C005D7E28 /* putao@3x.png */; };
 		56CC7A3D1B905A57005D7E28 /* CustomCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC7A3C1B905A57005D7E28 /* CustomCategoryCell.swift */; };
+		56DA3A6E1BBA32E700D0F487 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DA3A671BBA32C200D0F487 /* SnapKit.framework */; };
+		56DA3A6F1BBA32E700D0F487 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 56DA3A671BBA32C200D0F487 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		56DA3A721BBA32F100D0F487 /* SnapKit iOS Tests.xctest in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 56DA3A6B1BBA32C200D0F487 /* SnapKit iOS Tests.xctest */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		56DABD2F1BA8EB190014B70B /* tupian1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56DABD2B1BA8EB190014B70B /* tupian1@2x.png */; };
 		56DABD301BA8EB190014B70B /* tupian2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56DABD2C1BA8EB190014B70B /* tupian2@2x.png */; };
 		56DABD311BA8EB190014B70B /* tupian3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56DABD2D1BA8EB190014B70B /* tupian3@2x.png */; };
 		56DABD321BA8EB190014B70B /* tupian4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56DABD2E1BA8EB190014B70B /* tupian4@2x.png */; };
-		8E14A58D1B973CC1005D3212 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E14A5861B973C81005D3212 /* SnapKit.framework */; };
-		8E14A58E1B973CC1005D3212 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E14A5861B973C81005D3212 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8EEB53C91B9DD9D700A1B065 /* CustomHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEB53C81B9DD9D700A1B065 /* CustomHomeCell.swift */; };
 		8EEB53CB1BA038A900A1B065 /* ExtendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEB53CA1BA038A900A1B065 /* ExtendButton.swift */; };
 /* End PBXBuildFile section */
@@ -71,40 +71,47 @@
 			remoteGlobalIDString = 5694820C1B73BC37003C4D36;
 			remoteInfo = ShopClient;
 		};
-		8E14A5851B973C81005D3212 /* PBXContainerItemProxy */ = {
+		56DA3A661BBA32C200D0F487 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8E14A57E1B973C80005D3212 /* SnapKit.xcodeproj */;
+			containerPortal = 56DA3A5F1BBA32C200D0F487 /* SnapKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
 			remoteInfo = "SnapKit iOS";
 		};
-		8E14A5871B973C81005D3212 /* PBXContainerItemProxy */ = {
+		56DA3A681BBA32C200D0F487 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8E14A57E1B973C80005D3212 /* SnapKit.xcodeproj */;
+			containerPortal = 56DA3A5F1BBA32C200D0F487 /* SnapKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EECDB37A1AC0C9D4006BBC11;
 			remoteInfo = "SnapKit OSX";
 		};
-		8E14A5891B973C81005D3212 /* PBXContainerItemProxy */ = {
+		56DA3A6A1BBA32C200D0F487 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8E14A57E1B973C80005D3212 /* SnapKit.xcodeproj */;
+			containerPortal = 56DA3A5F1BBA32C200D0F487 /* SnapKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
 			remoteInfo = "SnapKit iOS Tests";
 		};
-		8E14A58B1B973C81005D3212 /* PBXContainerItemProxy */ = {
+		56DA3A6C1BBA32C200D0F487 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8E14A57E1B973C80005D3212 /* SnapKit.xcodeproj */;
+			containerPortal = 56DA3A5F1BBA32C200D0F487 /* SnapKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EECDB3841AC0C9D4006BBC11;
 			remoteInfo = "SnapKit OSX Tests";
 		};
-		8E14A58F1B973CC1005D3212 /* PBXContainerItemProxy */ = {
+		56DA3A701BBA32E700D0F487 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8E14A57E1B973C80005D3212 /* SnapKit.xcodeproj */;
+			containerPortal = 56DA3A5F1BBA32C200D0F487 /* SnapKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
 			remoteInfo = "SnapKit iOS";
+		};
+		56DA3A731BBA32F100D0F487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56DA3A5F1BBA32C200D0F487 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9E119CC627D0083B827;
+			remoteInfo = "SnapKit iOS Tests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -115,9 +122,20 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8E14A58E1B973CC1005D3212 /* SnapKit.framework in Embed Frameworks */,
+				56DA3A6F1BBA32E700D0F487 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DA3A751BBA32F100D0F487 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				56DA3A721BBA32F100D0F487 /* SnapKit iOS Tests.xctest in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -138,7 +156,6 @@
 		5691A3181B80032800B5187E /* gouwu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gouwu@3x.png"; sourceTree = "<group>"; };
 		5691A3191B80032800B5187E /* zhuye@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhuye@3x.png"; sourceTree = "<group>"; };
 		5691A31A1B80032800B5187E /* zuojiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuojiantou.png; sourceTree = "<group>"; };
-		5691A3221B806C4C00B5187E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5691A3241B82DC7C00B5187E /* Barcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Barcode.swift; path = model/Barcode.swift; sourceTree = "<group>"; };
 		5691A3261B82E03900B5187E /* Authorize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Authorize.swift; path = model/Authorize.swift; sourceTree = "<group>"; };
 		5691A3271B82E03900B5187E /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = model/Category.swift; sourceTree = "<group>"; };
@@ -173,11 +190,11 @@
 		56CC791A1B86CB3C005D7E28 /* banner1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner1@2x.png"; sourceTree = "<group>"; };
 		56CC791B1B86CB3C005D7E28 /* putao@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "putao@3x.png"; sourceTree = "<group>"; };
 		56CC7A3C1B905A57005D7E28 /* CustomCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCategoryCell.swift; sourceTree = "<group>"; };
+		56DA3A5F1BBA32C200D0F487 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
 		56DABD2B1BA8EB190014B70B /* tupian1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tupian1@2x.png"; sourceTree = "<group>"; };
 		56DABD2C1BA8EB190014B70B /* tupian2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tupian2@2x.png"; sourceTree = "<group>"; };
 		56DABD2D1BA8EB190014B70B /* tupian3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tupian3@2x.png"; sourceTree = "<group>"; };
 		56DABD2E1BA8EB190014B70B /* tupian4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tupian4@2x.png"; sourceTree = "<group>"; };
-		8E14A57E1B973C80005D3212 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		8EEB53C81B9DD9D700A1B065 /* CustomHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHomeCell.swift; sourceTree = "<group>"; };
 		8EEB53CA1BA038A900A1B065 /* ExtendButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,7 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E14A58D1B973CC1005D3212 /* SnapKit.framework in Frameworks */,
+				56DA3A6E1BBA32E700D0F487 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +225,7 @@
 				5694820F1B73BC37003C4D36 /* ShopClient */,
 				569482251B73BC37003C4D36 /* ShopClientTests */,
 				5694820E1B73BC37003C4D36 /* Products */,
-				8E14A57E1B973C80005D3212 /* SnapKit.xcodeproj */,
+				56DA3A5F1BBA32C200D0F487 /* SnapKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,7 +267,6 @@
 				5622B26F1BB39A9600B837E9 /* MembersViewController.swift */,
 				5691A3141B7F1CD600B5187E /* ShopViewController.swift */,
 				5691A3121B7F1C9300B5187E /* UserViewController.swift */,
-				5691A3221B806C4C00B5187E /* MainViewController.swift */,
 				56C24E8E1B846472005FF25F /* SignInViewController.swift */,
 				56CC7A3C1B905A57005D7E28 /* CustomCategoryCell.swift */,
 				8EEB53C81B9DD9D700A1B065 /* CustomHomeCell.swift */,
@@ -312,13 +328,13 @@
 			name = model;
 			sourceTree = "<group>";
 		};
-		8E14A57F1B973C80005D3212 /* Products */ = {
+		56DA3A601BBA32C200D0F487 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E14A5861B973C81005D3212 /* SnapKit.framework */,
-				8E14A5881B973C81005D3212 /* SnapKit.framework */,
-				8E14A58A1B973C81005D3212 /* SnapKit iOS Tests.xctest */,
-				8E14A58C1B973C81005D3212 /* SnapKit OSX Tests.xctest */,
+				56DA3A671BBA32C200D0F487 /* SnapKit.framework */,
+				56DA3A691BBA32C200D0F487 /* SnapKit.framework */,
+				56DA3A6B1BBA32C200D0F487 /* SnapKit iOS Tests.xctest */,
+				56DA3A6D1BBA32C200D0F487 /* SnapKit OSX Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -334,11 +350,13 @@
 				5694820A1B73BC37003C4D36 /* Frameworks */,
 				5694820B1B73BC37003C4D36 /* Resources */,
 				56C24E8C1B8367BF005FF25F /* Embed Frameworks */,
+				56DA3A751BBA32F100D0F487 /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8E14A5901B973CC1005D3212 /* PBXTargetDependency */,
+				56DA3A711BBA32E700D0F487 /* PBXTargetDependency */,
+				56DA3A741BBA32F100D0F487 /* PBXTargetDependency */,
 			);
 			name = ShopClient;
 			productName = ShopClient;
@@ -369,7 +387,9 @@
 		569482051B73BC37003C4D36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "王彦伟";
 				TargetAttributes = {
 					5694820C1B73BC37003C4D36 = {
@@ -394,8 +414,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 8E14A57F1B973C80005D3212 /* Products */;
-					ProjectRef = 8E14A57E1B973C80005D3212 /* SnapKit.xcodeproj */;
+					ProductGroup = 56DA3A601BBA32C200D0F487 /* Products */;
+					ProjectRef = 56DA3A5F1BBA32C200D0F487 /* SnapKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -407,32 +427,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		8E14A5861B973C81005D3212 /* SnapKit.framework */ = {
+		56DA3A671BBA32C200D0F487 /* SnapKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SnapKit.framework;
-			remoteRef = 8E14A5851B973C81005D3212 /* PBXContainerItemProxy */;
+			remoteRef = 56DA3A661BBA32C200D0F487 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8E14A5881B973C81005D3212 /* SnapKit.framework */ = {
+		56DA3A691BBA32C200D0F487 /* SnapKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SnapKit.framework;
-			remoteRef = 8E14A5871B973C81005D3212 /* PBXContainerItemProxy */;
+			remoteRef = 56DA3A681BBA32C200D0F487 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8E14A58A1B973C81005D3212 /* SnapKit iOS Tests.xctest */ = {
+		56DA3A6B1BBA32C200D0F487 /* SnapKit iOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SnapKit iOS Tests.xctest";
-			remoteRef = 8E14A5891B973C81005D3212 /* PBXContainerItemProxy */;
+			remoteRef = 56DA3A6A1BBA32C200D0F487 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8E14A58C1B973C81005D3212 /* SnapKit OSX Tests.xctest */ = {
+		56DA3A6D1BBA32C200D0F487 /* SnapKit OSX Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SnapKit OSX Tests.xctest";
-			remoteRef = 8E14A58B1B973C81005D3212 /* PBXContainerItemProxy */;
+			remoteRef = 56DA3A6C1BBA32C200D0F487 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -491,7 +511,6 @@
 				5691A34A1B82E03900B5187E /* System.swift in Sources */,
 				5691A3401B82E03900B5187E /* MainPushCommodityInfo.swift in Sources */,
 				5691A3151B7F1CD600B5187E /* ShopViewController.swift in Sources */,
-				5691A3231B806C4C00B5187E /* MainViewController.swift in Sources */,
 				5691A33C1B82E03900B5187E /* Commodity.swift in Sources */,
 				5691A3131B7F1C9300B5187E /* UserViewController.swift in Sources */,
 				5691A3471B82E03900B5187E /* PaymentType.swift in Sources */,
@@ -529,10 +548,15 @@
 			target = 5694820C1B73BC37003C4D36 /* ShopClient */;
 			targetProxy = 569482231B73BC37003C4D36 /* PBXContainerItemProxy */;
 		};
-		8E14A5901B973CC1005D3212 /* PBXTargetDependency */ = {
+		56DA3A711BBA32E700D0F487 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SnapKit iOS";
-			targetProxy = 8E14A58F1B973CC1005D3212 /* PBXContainerItemProxy */;
+			targetProxy = 56DA3A701BBA32E700D0F487 /* PBXContainerItemProxy */;
+		};
+		56DA3A741BBA32F100D0F487 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SnapKit iOS Tests";
+			targetProxy = 56DA3A731BBA32F100D0F487 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -558,6 +582,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -622,9 +647,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ShopClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShopClient.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -634,9 +661,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ShopClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShopClient.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -656,6 +685,7 @@
 				);
 				INFOPLIST_FILE = ShopClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShopClient.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShopClient.app/ShopClient";
 			};
@@ -671,6 +701,7 @@
 				);
 				INFOPLIST_FILE = ShopClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShopClient.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShopClient.app/ShopClient";
 			};

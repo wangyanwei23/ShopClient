@@ -39,7 +39,7 @@ class CustomCell: UITableViewCell {
         line.backgroundColor = UIColor(red: 193/255, green: 193/255, blue: 193/255, alpha: 0.5)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

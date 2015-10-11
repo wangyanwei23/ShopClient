@@ -2,7 +2,7 @@ import Foundation
 
 class ApiClient {
     
-    static let url = "http://121.40.78.69:8088/app/"
+    static let url = "http://121.43.126.193:8088/app/"
     
     //用户退出
     static func getLoginOut (completion: ((String?, String?) -> Void)) {
@@ -23,13 +23,13 @@ class ApiClient {
     }
     
     //用户名验证
-    static func getValidata (loginname: String, completion: ((Boolean?, String?) -> Void)) {
+    static func getValidata (loginname: String, completion: ((DarwinBoolean?, String?) -> Void)) {
         
         let urlString = url + "user/validate?loginname=" + loginname
         HttpClient.get(urlString, completion: { (dict: NSDictionary?, err: String?) -> Void in
             
             if let data: NSDictionary = dict {
-                if let flag = data["flag"] as? Boolean {
+                if let flag = data["flag"] as? DarwinBoolean {
                     completion(flag, nil)
                 } else {
                     completion(nil, "未知错误")
@@ -71,20 +71,20 @@ class ApiClient {
                     if let row = page["rows"] as? NSArray {
                         var commodity: [Commodity] = []
                         for r in row {
-                            var commodityNumber = r["commoditynumber"] as? String
-                            var name = r["name"] as? String
-                            var commoditycategoryl1 = r["commoditycategoryl1"] as? String
-                            var attribute = r["attribute"] as? Int
-                            var picture = r["picture"] as? String
-                            var thestate = r["thestate"] as? Int
-                            var categoryName = r["categoryName"] as? String
-                            var saleprice = r["saleprice"] as? Float
-                            var memberprice = r["memberprice"] as? Float
-                            var packagenumber = r["packagenumber"] as? String
-                            var packageName = r["packageName"] as? String
-                            var volume = r["volume"] as? String
-                            var isScore = r["isScore"] as? Int
-                            var isGift = r["isGift"] as? Int
+                            let commodityNumber = r["commoditynumber"] as? String
+                            let name = r["name"] as? String
+                            let commoditycategoryl1 = r["commoditycategoryl1"] as? String
+                            let attribute = r["attribute"] as? Int
+                            let picture = r["picture"] as? String
+                            let thestate = r["thestate"] as? Int
+                            let categoryName = r["categoryName"] as? String
+                            let saleprice = r["saleprice"] as? Float
+                            let memberprice = r["memberprice"] as? Float
+                            let packagenumber = r["packagenumber"] as? String
+                            let packageName = r["packageName"] as? String
+                            let volume = r["volume"] as? String
+                            let isScore = r["isScore"] as? Int
+                            let isGift = r["isGift"] as? Int
             
                             let c = Commodity(commodityNumber: commodityNumber, name: name, commoditycategoryl1: commoditycategoryl1, attribute: attribute, picture: picture, thestate: thestate, categoryName: categoryName, saleprice: saleprice, memberprice: memberprice, packageNumber: packagenumber, packageName: packageName, volume: volume, isScore: isScore, isGift: isGift)
                             commodity.append(c)
@@ -128,30 +128,30 @@ class ApiClient {
             if let data : NSDictionary = dict {
                 if let commodityInfo = data["commodity"] as? NSDictionary {
 
-                    var commodityNumber = commodityInfo["commodityNumber"] as? String
-                    var name = commodityInfo["name"] as? String
-                    var specification = commodityInfo["specification"] as? String
-                    var origin = commodityInfo["origin"] as? String
-                    var unit = commodityInfo["unit"] as? Int
-                    var productiondate = commodityInfo["productiondate"] as? Int
-                    var expirationdate = commodityInfo["expirationdate"] as? Int
-                    var commoditycategoryl1 = commodityInfo["commoditycategoryl1"] as? String
-                    var singlecredits = commodityInfo["singlecredits"] as? Int
-                    var provider = commodityInfo["provider"] as? Int
-                    var profit = commodityInfo["profit"] as? Int
-                    var attribute = commodityInfo["attribute"] as? Int
-                    var taxrate = commodityInfo["taxrate"] as? Int
-                    var temperature = commodityInfo["temperature"] as? String
-                    var detail = commodityInfo["detail"] as? String
-                    var overview = commodityInfo["overview"] as? String
-                    var savecondition = commodityInfo["savecondition"] as? String
-                    var msgorigin = commodityInfo["msgorigin"] as? String
-                    var picture = commodityInfo["picture"] as? String
-                    var thestate = commodityInfo["thestate"] as? Int
-                    var categoryName = commodityInfo["categoryName"] as? String
-                    var saleprice = commodityInfo["salePrice"] as? Float
-                    var packageNumber = commodityInfo["packagenumber"] as? String
-                    var packageName = commodityInfo["packageName"] as? String
+                    let commodityNumber = commodityInfo["commodityNumber"] as? String
+                    let name = commodityInfo["name"] as? String
+                    let specification = commodityInfo["specification"] as? String
+                    let origin = commodityInfo["origin"] as? String
+                    let unit = commodityInfo["unit"] as? Int
+                    let productiondate = commodityInfo["productiondate"] as? Int
+                    let expirationdate = commodityInfo["expirationdate"] as? Int
+                    let commoditycategoryl1 = commodityInfo["commoditycategoryl1"] as? String
+                    let singlecredits = commodityInfo["singlecredits"] as? Int
+                    let provider = commodityInfo["provider"] as? Int
+                    let profit = commodityInfo["profit"] as? Int
+                    let attribute = commodityInfo["attribute"] as? Int
+                    let taxrate = commodityInfo["taxrate"] as? Int
+                    let temperature = commodityInfo["temperature"] as? String
+                    let detail = commodityInfo["detail"] as? String
+                    let overview = commodityInfo["overview"] as? String
+                    let savecondition = commodityInfo["savecondition"] as? String
+                    let msgorigin = commodityInfo["msgorigin"] as? String
+                    let picture = commodityInfo["picture"] as? String
+                    let thestate = commodityInfo["thestate"] as? Int
+                    let categoryName = commodityInfo["categoryName"] as? String
+                    let saleprice = commodityInfo["salePrice"] as? Float
+                    let packageNumber = commodityInfo["packagenumber"] as? String
+                    let packageName = commodityInfo["packageName"] as? String
 
                     let info: Commodity = Commodity(commodityNumber: commodityNumber, name: name, specification: specification, origin: origin, unit: unit, productiondate: productiondate, expirationdate: expirationdate, commoditycategoryl1: commoditycategoryl1, singlecredits: singlecredits, provider: provider, profit: profit, attribute: attribute, taxrate: taxrate, temperature: temperature, detail: detail, overview: overview, savecondition: savecondition, msgorigin: msgorigin, picture: picture, thestate: thestate, categoryName: categoryName, saleprice: saleprice, packageNumber: packageNumber, packageName: packageName)
                     if let barcodeList = data["commodityBarcodeList"] as? NSArray {
@@ -192,13 +192,13 @@ class ApiClient {
             if let data : NSDictionary = dict {
                 if let detail: NSDictionary = data["commodityDetail"] as? NSDictionary {
                     
-                    var commoditynumber = detail["commoditynumber"] as? Int
-                    var firstimagepath = detail["firstimagepath"] as? String
-                    var secondimagepath = detail["secondimagepath"] as? String
-                    var thirdimagepath = detail["thirdimagepath"] as? String
-                    var fourthimagepath = detail["fourthimagepath"] as? String
-                    var fifthimagepath = detail["fifthimagepath"] as? String
-                    var commoditydetail = detail["commoditydetail"] as? String
+                    let commoditynumber = detail["commoditynumber"] as? Int
+                    let firstimagepath = detail["firstimagepath"] as? String
+                    let secondimagepath = detail["secondimagepath"] as? String
+                    let thirdimagepath = detail["thirdimagepath"] as? String
+                    let fourthimagepath = detail["fourthimagepath"] as? String
+                    let fifthimagepath = detail["fifthimagepath"] as? String
+                    let commoditydetail = detail["commoditydetail"] as? String
                  
                     let commodityDetail = CommodityDetail(commoditynumber: commoditynumber, firstimagepath: firstimagepath, secondimagepath: secondimagepath, thirdimagepath: thirdimagepath, fourthimagepath: fourthimagepath, fifthimagepath: fifthimagepath, commoditydetail: commoditydetail)
                     completion(commodityDetail, nil)

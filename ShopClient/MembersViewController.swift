@@ -50,7 +50,7 @@ class MembersViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let identify = "SwiftCell"
-        var cell = tableView.dequeueReusableCellWithIdentifier(identify) as! CustomCategoryCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(identify) as! CustomCategoryCell
         
         cell.accessoryType = UITableViewCellAccessoryType.None
         
@@ -60,7 +60,7 @@ class MembersViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.labName.text = self.nameArr[indexPath.row]
         
         let attr = NSMutableAttributedString(string: priceArr)
-        attr.addAttribute(NSStrikethroughStyleAttributeName, value: NSNumber(integer: 1), range: NSMakeRange(0, count(priceArr)))
+        attr.addAttribute(NSStrikethroughStyleAttributeName, value: NSNumber(integer: 1), range: NSMakeRange(0, priceArr.characters.count))
         cell.labPrice.attributedText = attr
         
         cell.labPrice1.text = priceArr

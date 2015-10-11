@@ -38,13 +38,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav4 = UINavigationController(rootViewController: viewCtrl4)
         viewCtrl4.tabBarItem = UITabBarItem(title: "个人中心", image: UIImage(named: "geren.png"), tag: 4)
         
-        var nav = [nav1, nav2, nav3, nav4]
+        let nav = [nav1, nav2, nav3, nav4]
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = nav
 //        tabBarController.tabBar.backgroundColor = UIColor.blackColor()
         //tabBarController.tabBar.tintColor = UIColor.greenColor()
         
-        //let nvc = UINavigationController(rootViewController: SignInViewController())
+//        let nvc = UINavigationController(rootViewController: SignInViewController())
         self.window!.rootViewController = tabBarController
         self.window!.makeKeyAndVisible()
         

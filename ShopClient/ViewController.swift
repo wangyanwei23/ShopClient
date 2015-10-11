@@ -55,17 +55,17 @@ class ViewController: UIViewController {
 //        })
         
         // 商品分类
-//        ApiClient.getCategories({ (detail, err) -> Void in
-//            if let info = detail {
-//                println(info[0].categoryname)
-//            } else {
-//                if let error = err {
-//                    println(error)
-//                } else {
-//                    println("未知错误!")
-//                }
-//            }
-//        })
+        ApiClient.getCategories({ (detail, err) -> Void in
+            if let info = detail {
+                print(info[0].categoryname)
+            } else {
+                if let error = err {
+                    print(error)
+                } else {
+                    print("未知错误!")
+                }
+            }
+        })
 
         //用户推出
 //        ApiClient.getLoginOut({ (detail, err) -> Void in
@@ -96,12 +96,12 @@ class ViewController: UIViewController {
         //商品基本信息
         ApiClient.getCommodity("100134", completion: { (detail, barcodes, err) -> Void in
             if let info = detail {
-                println(info.name)
+                print(info.name)
             } else {
                 if let error = err {
-                    println(error)
+                    print(error)
                 } else {
-                    println("未知错误!")
+                    print("未知错误!")
                 }
             }
         })

@@ -19,11 +19,11 @@ class HttpClient {
         let session = NSURLSession.sharedSession()
         let dataTask = session.dataTaskWithRequest(request, completionHandler: {(data, response, error) -> Void in
             if error == nil {
-                let json: NSDictionary! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary
+                let json: NSDictionary! = (try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)) as? NSDictionary
                 //println(json)
                 completion(json, nil)
             } else {
-                completion(nil, error.localizedFailureReason)
+                completion(nil, error!.localizedFailureReason)
             }
         })
         dataTask.resume()
@@ -37,11 +37,11 @@ class HttpClient {
         let dataTask = NSURLSession.sharedSession().uploadTaskWithRequest(request, fromData: data, completionHandler: {(data, response, error) -> Void in
             //println("上传完毕")
             if error == nil {
-                let json: NSDictionary! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary
+                let json: NSDictionary! = (try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)) as? NSDictionary
                 //println(json)
                 completion(json, nil)
             } else {
-                completion(nil, error.localizedFailureReason)
+                completion(nil, error!.localizedFailureReason)
             }
         })
         dataTask.resume()
