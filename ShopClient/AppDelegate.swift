@@ -21,22 +21,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewCtrl1 = HomeViewController()
         viewCtrl1.title = "酒乐GO"
         let nav1 = UINavigationController(rootViewController: viewCtrl1)
-        viewCtrl1.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "zhuye.png"), tag: 1)
+        viewCtrl1.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "zhuye.png"), tag: 0)
         
         let viewCerl2 = CategoryViewController()
         viewCerl2.title = "分类搜索"
         let nav2 = UINavigationController(rootViewController: viewCerl2)
-        viewCerl2.tabBarItem = UITabBarItem(title: "分类", image: UIImage(named: "fenlei.png"), tag: 2)
+        viewCerl2.tabBarItem = UITabBarItem(title: "分类", image: UIImage(named: "fenlei.png"), tag: 1)
         
         let viewCtrl3 = ShopViewController()
         viewCtrl3.title = "商品详情"
         let nav3 = UINavigationController(rootViewController: viewCtrl3)
-        viewCtrl3.tabBarItem = UITabBarItem(title: "购物", image: UIImage(named: "gouwu.png"), tag: 3)
+        viewCtrl3.tabBarItem = UITabBarItem(title: "购物", image: UIImage(named: "gouwu.png"), tag: 2)
         
         let viewCtrl4 = UserViewController()
         viewCtrl4.title = "个人中心"
         let nav4 = UINavigationController(rootViewController: viewCtrl4)
-        viewCtrl4.tabBarItem = UITabBarItem(title: "个人中心", image: UIImage(named: "geren.png"), tag: 4)
+        viewCtrl4.tabBarItem = UITabBarItem(title: "个人中心", image: UIImage(named: "geren.png"), tag: 3)
         
         let nav = [nav1, nav2, nav3, nav4]
         let tabBarController = UITabBarController()

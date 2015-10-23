@@ -446,60 +446,16 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDat
         //cell顺时针旋转90
 //        cell.transform = CGAffineTransformMakeRotation(CGFloat(M_PI / 2))
         //table点击不变色
-//        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
         return cell
         
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        var detailViewController = ShopViewController()
-//        self.navigationController?.pushViewController(ShopViewController(), animated: true)
-        self.presentViewController(ShopViewController(), animated: true, completion: nil)
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {        self.tabBarController?.selectedIndex = 2
     }
     
-//    func onClick(btn: UIButton) {
-//        print("1111")
-//        switch btn {
-//        case btn == btn1:
-////            self.presentViewController(CategoryViewController(), animated: true, completion: nil)
-//            self.navigationController?.pushViewController(CategoryViewController(), animated: true)
-//            print("1111")
-//            ApiClient.getCategories({ (detail, err) -> Void in
-//                if let info = detail {
-//                    print(info[0].categoryname)
-//                } else {
-//                    if let error = err {
-//                        print(error)
-//                    } else {
-//                        print("未知错误!")
-//                    }
-//                }
-//            })
-//
-//        case btn == btn2:
-////            self.presentViewController(SignInViewController(), animated: true, completion: nil)
-//            self.navigationController?.pushViewController(SignInViewController(), animated: true)
-//        case btn == btn3:
-//            self.presentViewController(CategoryViewController(), animated: true, completion: nil)
-//        default:
-//            self.presentViewController(CategoryViewController(), animated: true, completion: nil)
-//        }
-//    }
     func onClickBtn1(btn: UIButton) {
-        ApiClient.getCategories({ (detail, err) -> Void in
-            if let info = detail {
-                print(info[10].categoryname)
-            } else {
-                if let error = err {
-                    print(error)
-                } else {
-                    print("未知错误!")
-                }
-            }
-        })
-        
-//        self.navigationController?.pushViewController(CategoryViewController(), animated: true)
-        self.presentViewController(CategoryViewController(), animated: true, completion: nil)
+        self.tabBarController?.selectedIndex = 1
     }
     
     func onClickBtn2(btn: UIButton) {
